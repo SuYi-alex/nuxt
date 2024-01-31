@@ -1,9 +1,9 @@
 <template>
   <!-- Nuxt 基于文件的路由系统-->
   <!-- 首页index/index.vue -->
-  <NuxtLink to="/" :style="{ 'margin-right': '10px' }">首页</NuxtLink>
+  <!-- <NuxtLink to="/" :style="{ 'margin-right': '10px' }">首页</NuxtLink> -->
   <!-- 视频页video/video.vue -->
-  <NuxtLink to="/video">视频页</NuxtLink>
+  <!-- <NuxtLink to="/video">视频页</NuxtLink> -->
   <!-- Nuxt页面路由，相当于vue中router-view -->
   <NuxtPage />
 </template>
@@ -19,3 +19,11 @@ useSeoMeta({
   keywords: 'B站,哔哩哔哩, bilibili, 动漫, 动画,电影',
 });
 </script>
+<style lang="scss">
+@import '@/assets/style/base.scss';
+@import '@/assets/style/iconfont.scss';
+:root {
+  /* css变量设置组件库主题 */
+  --van-primary-color: #fb7299 !important;
+}
+</style>
