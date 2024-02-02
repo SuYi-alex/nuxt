@@ -1,11 +1,8 @@
 <template>
   <!-- Nuxt 基于文件的路由系统-->
-  <!-- 首页index/index.vue -->
-  <!-- <NuxtLink to="/" :style="{ 'margin-right': '10px' }">首页</NuxtLink> -->
-  <!-- 视频页video/video.vue -->
-  <!-- <NuxtLink to="/video">视频页</NuxtLink> -->
   <!-- Nuxt页面路由，相当于vue中router-view -->
-  <NuxtPage />
+  <!-- 缓存 10 级页面，提升用户体验 -->
+  <NuxtPage :keepalive="{ max: 10 }" />
 </template>
 <script lang="ts" setup>
 // seo优化信息
@@ -30,5 +27,6 @@ useSeoMeta({
 :root {
   /* css变量设置组件库主题 */
   --van-primary-color: #fb7299 !important;
+  --van-back-top-background: #fb7299 !important;
 }
 </style>

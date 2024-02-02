@@ -10,7 +10,7 @@
     <van-list
       v-model:loading="loading"
       :finished="finished"
-      finished-text="没有更多了"
+      finished-text="去哔哩哔哩官方查看更多"
       @load="onLoad"
     >
       <div class="video-list">
@@ -105,5 +105,12 @@ onLoad();
   display: flex;
   flex-wrap: wrap;
   padding: 10px 5px;
+}
+.van-list__finished-text {
+  background-color: #ea7a99;
+  border-radius: 30px;
+  margin: 10px 30px;
+  color: #ffffff;
+  font-size: 16px;
 }
 </style>
