@@ -1,5 +1,6 @@
 <template>
-  <h1>视频页-{{ route.params.id }}</h1>
+  <!-- 公共头部 -->
+  <app-header></app-header>
 </template>
 
 <script setup lang="ts">
